@@ -1,0 +1,80 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f091c49cb1ad9a84ca1e842ab848d268, type: 3}
+  m_Name: EventCatalog
+  m_EditorClassIdentifier: Core::Anchorpoint.App.Events.EventCatalog
+  <MinInterval>k__BackingField: 5
+  <MaxInterval>k__BackingField: 15
+  <SuccessCleanupDelay>k__BackingField: 2
+  events:
+  - rid: 656967656144634120
+  - rid: 656967656144634121
+  - rid: 656967656144634122
+  - rid: 656967656144634123
+  references:
+    version: 2
+    RefIds:
+    - rid: 656967656144634120
+      type: {class: EnemyAttackEventConfig, ns: Anchorpoint.App.GameEvents.Events.Configs, asm: App}
+      data:
+        <Context>k__BackingField: 0
+        <StartMessage>k__BackingField: "\u041F\u043E\u0436\u0430\u0440!"
+        <SuccessMessage>k__BackingField: "\u0412\u044B \u043F\u043E\u0442\u0443\u0448\u0438\u043B\u0438
+          \u043F\u043E\u0436\u0430\u0440!"
+        <FailureMessage>k__BackingField: "\u0411\u0430\u0437\u0430 \u0441\u0433\u043E\u0440\u0435\u043B\u0430..."
+        npcPrefab: {fileID: 5058060752357942144, guid: da92c87d06337024ebbebc4f05d3bebe, type: 3}
+        minCount: 2
+        maxCount: 6
+        lifetime: 35
+        maxSpawnDistance: 15
+    - rid: 656967656144634121
+      type: {class: EnemyAttackEventConfig, ns: Anchorpoint.App.GameEvents.Events.Configs, asm: App}
+      data:
+        <Context>k__BackingField: 0
+        <StartMessage>k__BackingField: "\u041D\u0430 \u0431\u0430\u0437\u0443 \u043D\u0430\u043F\u0430\u043B\u0438!"
+        <SuccessMessage>k__BackingField: "\u0412\u044B \u0437\u0430\u0449\u0438\u0442\u0438\u043B\u0438
+          \u0431\u0430\u0437\u0443."
+        <FailureMessage>k__BackingField: "\u0411\u0430\u0437\u0430 \u0431\u044B\u043B\u0430
+          \u0440\u0430\u0437\u0440\u0443\u0448\u0435\u043D\u0430..."
+        npcPrefab: {fileID: 2946086116427372388, guid: 5804223ee6d836d41a6e6a5c6ecad46d, type: 3}
+        minCount: 2
+        maxCount: 3
+        lifetime: 40
+        maxSpawnDistance: 15
+    - rid: 656967656144634122
+      type: {class: EnemyAttackEventConfig, ns: Anchorpoint.App.GameEvents.Events.Configs, asm: App}
+      data:
+        <Context>k__BackingField: 1
+        <StartMessage>k__BackingField: "\u0417\u0430\u0441\u0430\u0434\u0430!"
+        <SuccessMessage>k__BackingField: "\u0412\u044B \u043E\u0442\u0431\u0438\u043B\u0438\u0441\u044C
+          \u043E\u0442 \u0432\u0440\u0430\u0433\u043E\u0432."
+        <FailureMessage>k__BackingField: "\u0412\u0440\u0430\u0433\u0438 \u0443\u0448\u043B\u0438..."
+        npcPrefab: {fileID: 2946086116427372388, guid: 5804223ee6d836d41a6e6a5c6ecad46d, type: 3}
+        minCount: 1
+        maxCount: 1
+        lifetime: 35
+        maxSpawnDistance: 15
+    - rid: 656967656144634123
+      type: {class: ResourceFindEventConfig, ns: Anchorpoint.App.GameEvents.Events.Configs, asm: App}
+      data:
+        <Context>k__BackingField: 1
+        <StartMessage>k__BackingField: "\u041F\u043E\u044F\u0432\u0438\u043B\u0430\u0441\u044C
+          \u0438\u043D\u0444\u043E\u0440\u043C\u0430\u0446\u0438\u044F \u043E \u0440\u0435\u0441\u0443\u0440\u0441\u0430\u0445!
+          \u041A\u043E\u043E\u0440\u0434\u0438\u043D\u0430\u0442\u044B:"
+        <SuccessMessage>k__BackingField: "\u0412\u044B \u043F\u043E\u0434\u043E\u0431\u0440\u0430\u043B\u0438
+          \u0440\u0435\u0441\u0443\u0440\u0441\u044B."
+        <FailureMessage>k__BackingField: "\u0420\u0435\u0443\u0441\u0440\u0441\u044B
+          \u043D\u0430\u0448\u0435\u043B \u043A\u0442\u043E-\u0442\u043E \u0434\u0440\u0443\u0433\u043E\u0439..."
+        prefabs:
+        - {fileID: 2134046964989066471, guid: 1ebb2f964d176e044801132d8da93a9a, type: 3}
+        timeout: 50
+        maxSpawnDistance: 50

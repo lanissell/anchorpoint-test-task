@@ -1,0 +1,20 @@
+{
+    "name": "App",
+    "rootNamespace": "Anchorpoint",
+    "references": [
+        "Infrastructure",
+        "Unity.InputSystem",
+        "MackySoft.SerializeReferenceExtensions",
+        "Core",
+        "UnityEngine.UI"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}

@@ -1,0 +1,79 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 545bbbeca8620544fbe206cda021eed7, type: 3}
+  m_Name: PlayerDefenition
+  m_EditorClassIdentifier: Core::Anchorpoint.Core.Units.UnitDefinition
+  <BrainConfig>k__BackingField:
+    rid: 656967631930654790
+  componentConfigs:
+  - rid: 656967631930654782
+  - rid: 656967631930654783
+  - rid: 656967631930654786
+  - rid: 656967631930654787
+  - rid: 656967631930654788
+  - rid: 656967631930654801
+  - rid: 656967631930655025
+  - rid: 656967656144634130
+  references:
+    version: 2
+    RefIds:
+    - rid: 656967631930654782
+      type: {class: GravityConfig, ns: Anchorpoint.App.Units.UnitComponents.Configs, asm: App}
+      data:
+        gravity: -20
+    - rid: 656967631930654783
+      type: {class: JumpConfig, ns: Anchorpoint.App.Units.UnitComponents.Configs, asm: App}
+      data:
+        jumpHeight: 1.5
+    - rid: 656967631930654786
+      type: {class: LookConfig, ns: Anchorpoint.App.Units.UnitComponents.Configs, asm: App}
+      data:
+        verticalClamp: 85
+        turnSpeed: 0.15
+    - rid: 656967631930654787
+      type: {class: MovementConfig, ns: Anchorpoint.App.Units.UnitComponents.Configs, asm: App}
+      data:
+        walkSpeed: 5
+        sprintSpeed: 8
+    - rid: 656967631930654788
+      type: {class: InteractorConfig, ns: Anchorpoint.App.Units.UnitComponents.Configs, asm: App}
+      data:
+        range: 2.5
+        pickupMask:
+          serializedVersion: 2
+          m_Bits: 4294967295
+    - rid: 656967631930654790
+      type: {class: PlayerBrainConfig, ns: Anchorpoint.App.Units.Brains.Player, asm: App}
+      data: 
+    - rid: 656967631930654801
+      type: {class: MeleeAttackConfig, ns: Anchorpoint.App.Units.UnitComponents.Configs, asm: App}
+      data:
+        damage: 1
+        range: 3
+        cooldown: 1.5
+        targetMask:
+          serializedVersion: 2
+          m_Bits: 64
+    - rid: 656967631930655025
+      type: {class: RangedAttackConfig, ns: Anchorpoint.App.Units.UnitComponents.Configs, asm: App}
+      data:
+        damage: 10
+        range: 25
+        cooldown: 0.1
+        hitMask:
+          serializedVersion: 2
+          m_Bits: 65
+        automatic: 1
+    - rid: 656967656144634130
+      type: {class: HealthConfig, ns: Anchorpoint.App.Units.UnitComponents.Configs, asm: App}
+      data:
+        maxHealth: 1000000000
