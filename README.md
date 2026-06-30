@@ -5,6 +5,12 @@
 - **Движок:** Unity 6000.3.11f1
 - **Сцена:** `Assets/Scenes/GameScene.unity`
 
+## Демо
+
+[![Геймплей](https://img.shields.io/badge/▶_Смотреть-gameplay.mp4-blue)](artifacts/gameplay.mp4)
+
+https://github.com/lanissell/anchorpoint-test-task/raw/main/artifacts/gameplay.mp4
+
 ## Управление
 
 | Действие | Клавиша |
