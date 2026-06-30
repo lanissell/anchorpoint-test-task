@@ -1,5 +1,6 @@
 using Anchorpoint.App.Events;
 using Anchorpoint.App.Units.Brains;
+using Anchorpoint.Infrastructure;
 using Anchorpoint.Infrastructure.Environment;
 using Anchorpoint.Infrastructure.Services;
 using Anchorpoint.Infrastructure.Services.Base;
@@ -15,6 +16,7 @@ namespace Anchorpoint.App.SceneRoot
     /// <summary>
     /// Sets up the scene and drives all ticks.
     /// </summary>
+    [DefaultExecutionOrder(Constants.RootExecutionOrder)]
     public sealed class GameSceneRoot : RootBase
     {
         [SerializeField]

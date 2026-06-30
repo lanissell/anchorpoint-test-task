@@ -655,6 +655,7 @@ GameObject:
   - component: {fileID: 2992192995997585661}
   - component: {fileID: 2237735670619959968}
   - component: {fileID: 1059605358512958118}
+  - component: {fileID: 8019317294872152289}
   m_Layer: 3
   m_Name: FPS_Character_prefab
   m_TagString: Untagged
@@ -807,6 +808,23 @@ MonoBehaviour:
     <Clip>k__BackingField: {fileID: 8300000, guid: fb859d907317d2446a59ffdeb1807e15, type: 3}
     pitch: {x: 0.8, y: 1}
     volume: {x: 0.4, y: 0.5}
+--- !u!114 &8019317294872152289
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1000010973930614}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2620410122b444d459c663b38a26e6f6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: App::Anchorpoint.App.Units.UnitComponents.Views.InteractorComponentView
+  soundPrefab: {fileID: 5301018039807500691, guid: 5db2c13a7bfa02d4f8ce030d071c6c6c, type: 3}
+  sound:
+    <Clip>k__BackingField: {fileID: 8300000, guid: 38e7c39b0e3fbc843b9bc3bbeaa89755, type: 3}
+    pitch: {x: 1, y: 1.1}
+    volume: {x: 0.6, y: 0.7}
 --- !u!1 &1000011062073168
 GameObject:
   m_ObjectHideFlags: 0

@@ -1,17 +1,14 @@
-using Anchorpoint.App.Events;
-using Anchorpoint.Infrastructure.Services;
 using Anchorpoint.Infrastructure.Services.Base;
 using Anchorpoint.Infrastructure.Services.Implementations;
 using Anchorpoint.Infrastructure.Services.Interfaces;
-using System.Diagnostics;
 using UnityEngine;
 
-namespace Anchorpoint.App
+namespace Anchorpoint.Infrastructure
 {
     /// <summary>
     /// App entry point that registers all services.
     /// </summary>
-    [DefaultExecutionOrder(-10)]
+    [DefaultExecutionOrder(Constants.AppLoaderExecutionOrder)]
     public class AppLoader : MonoBehaviour
     {
         /// <summary>
@@ -31,7 +28,6 @@ namespace Anchorpoint.App
 
         private static ServiceLocator serviceLocator;
 
-        [Conditional("UNITY_EDITOR")]
         private static void ValidateServiceLocator()
         {
             if (serviceLocator != null)

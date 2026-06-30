@@ -1,3 +1,4 @@
+using Anchorpoint.App.Units.UnitComponents.Views;
 using Anchorpoint.Core.Interaction;
 using Anchorpoint.Core.Units;
 using Anchorpoint.Core.Units.Base;
@@ -15,6 +16,7 @@ namespace Anchorpoint.App.Units.UnitComponents
         private readonly Collider[] buffer = new Collider[8];
 
         private Unit unit;
+        private InteractorComponentView view;
 
         /// <summary>
         /// Creates the component with a reach and pickup layer mask.
@@ -29,6 +31,7 @@ namespace Anchorpoint.App.Units.UnitComponents
         public void Attach(Unit attachedUnit)
         {
             unit = attachedUnit;
+            unit.TryGet(out view);
         }
 
         /// <inheritdoc/>
@@ -71,7 +74,11 @@ namespace Anchorpoint.App.Units.UnitComponents
                 }
             }
 
-            nearest?.Collect();
+            if (nearest != null)
+            {
+                nearest.Collect();
+                view?.Play();
+            }
         }
     }
 }

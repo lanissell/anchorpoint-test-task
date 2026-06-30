@@ -3,12 +3,12 @@ using System;
 using System.Threading;
 using UnityEngine;
 
-namespace Anchorpoint.App
+namespace Anchorpoint.Infrastructure
 {
     /// <summary>
     /// Base for scene roots; sets up a cancellation token and calls Initialize on Awake.
     /// </summary>
-    [DefaultExecutionOrder(-15)]
+    [DefaultExecutionOrder(Constants.RootExecutionOrder)]
     public abstract class RootBase : MonoBehaviour, IDisposable
     {
         private CancellationTokenSource rootCts;

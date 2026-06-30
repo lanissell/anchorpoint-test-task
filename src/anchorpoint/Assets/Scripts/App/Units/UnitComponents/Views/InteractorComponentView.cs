@@ -9,9 +9,9 @@ using UnityEngine;
 namespace Anchorpoint.App.Units.UnitComponents.Views
 {
     /// <summary>
-    /// Plays the jump sound.
+    /// Plays the pickup sound.
     /// </summary>
-    public sealed class JumpComponentView : MonoBehaviour, IUnitComponent
+    public sealed class InteractorComponentView : MonoBehaviour, IUnitComponent
     {
         [Header("Sound")]
         [SerializeField]
@@ -40,7 +40,7 @@ namespace Anchorpoint.App.Units.UnitComponents.Views
         public void Reset() { }
 
         /// <summary>
-        /// Plays the jump sound.
+        /// Plays the pickup sound.
         /// </summary>
         public void Play()
         {

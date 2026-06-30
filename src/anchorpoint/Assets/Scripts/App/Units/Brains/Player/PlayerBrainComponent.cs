@@ -1,6 +1,7 @@
 using Anchorpoint.App.Units.UnitComponents;
 using Anchorpoint.Core.Units;
 using Anchorpoint.Core.Units.Base;
+using Anchorpoint.Infrastructure;
 using Anchorpoint.Infrastructure.Services.Interfaces;
 using UnityEngine;
 using UnityEngine.InputSystem;
@@ -23,6 +24,9 @@ namespace Anchorpoint.App.Units.Brains.Player
 
             input.PlayerActions.Interact.performed += OnInteractPerformed;
             input.PlayerActions.Meele.performed += OnMeleePerformed;
+
+            Cursor.lockState = CursorLockMode.Locked;
+            Cursor.visible = false;
         }
 
         /// <inheritdoc/>

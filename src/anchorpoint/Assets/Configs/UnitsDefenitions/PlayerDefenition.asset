@@ -38,7 +38,7 @@ MonoBehaviour:
       type: {class: LookConfig, ns: Anchorpoint.App.Units.UnitComponents.Configs, asm: App}
       data:
         verticalClamp: 85
-        turnSpeed: 0.15
+        turnSpeed: 0.08
     - rid: 656967631930654787
       type: {class: MovementConfig, ns: Anchorpoint.App.Units.UnitComponents.Configs, asm: App}
       data:
